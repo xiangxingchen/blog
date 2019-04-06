@@ -6,6 +6,7 @@
 ## 源码解析
 
 - [redux源码解析](https://github.com/xiangxingchen/blog/issues/1)
+- [React源码系列一之createElement](https://github.com/xiangxingchen/blog/issues/13)
 
 ## JavaScript专题系列
 
