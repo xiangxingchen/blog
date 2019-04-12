@@ -26,3 +26,4 @@
 ## 浏览器
 - [缓存机制](https://github.com/xiangxingchen/blog/issues/9)
 - [cookie与session](https://github.com/xiangxingchen/blog/issues/10)
+- [前端应该知道的http](https://github.com/xiangxingchen/blog/issues/14)
