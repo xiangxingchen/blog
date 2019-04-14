@@ -1,0 +1,25 @@
+<!-- index.html 文件 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>AAAAAAAAAAAA</h1>
+<iframe src="http://localhost:4000/b.html" id="frame" onload="load()"></iframe>
+<script>
+  function load(params){
+    let iframe = document.getElementById('frame');
+    iframe.onload = function() {
+      //获取iframe中的窗口,给iframe里嵌入的window发消息
+      iframe.contentWindow.postMessage('I LOVE YOU !', 'http://localhost:4000');
+    };
+    // 接收b.html回过来的消息
+    window.onmessage = function(e){
+      console.log(e.data)
+    }
+  }
+</script>
+</body>
+</html>

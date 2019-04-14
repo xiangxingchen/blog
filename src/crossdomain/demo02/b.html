@@ -1,0 +1,17 @@
+<!-- index.html 文件 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>BBBBBBBBB</h1>
+<script>
+  window.onmessage = function(e) {
+    console.log(e.data)
+    e.source.postMessage('我不爱你!', e.origin)
+  }
+</script>
+</body>
+</html>

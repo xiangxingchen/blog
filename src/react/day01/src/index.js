@@ -10,7 +10,7 @@ class App extends React.Component {
   }
 }
 ReactDOM.render(
-<App/>,
+<h1>1111</h1>,
   document.getElementById("root")
 );
 

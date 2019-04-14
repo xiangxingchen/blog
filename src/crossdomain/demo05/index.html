@@ -1,0 +1,29 @@
+<!-- index.html 文件 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<h1>1111</h1>
+<script>
+  let xhr = new XMLHttpRequest()
+  document.cookie = 'name=xiamen' // cookie不能跨域
+  xhr.withCredentials = true // 前端设置是否带cookie
+  xhr.open('PUT', 'http://127.0.0.1:4000/getData', true)
+  xhr.setRequestHeader('name', 'xiamen')
+  xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+      if ((xhr.status >= 200 && xhr.status < 300) || xhr.status === 304) {
+        console.log(xhr.response)
+        //得到响应头，后台需设置Access-Control-Expose-Headers
+        console.log(xhr.getResponseHeader('name'))
+      }
+    }
+  }
+  xhr.send()
+
+</script>
+</body>
+</html>
