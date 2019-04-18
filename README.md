@@ -28,3 +28,4 @@
 - [cookie与session](https://github.com/xiangxingchen/blog/issues/10)
 - [前端应该知道的http](https://github.com/xiangxingchen/blog/issues/14)
 - [九种跨域方案](https://github.com/xiangxingchen/blog/issues/15)
+- [浏览器渲染机制浅析](https://github.com/xiangxingchen/blog/issues/16)
