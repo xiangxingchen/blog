@@ -9,19 +9,23 @@ http.createServer((req, res) => {
       setTimeout(function () {
         res.write(data);
         res.end()
-      }, 10000)
+      }, 5000)
     })
   } else if (req.url == '/b.js') {
     fs.readFile('b.js', 'utf-8', function (err, data) {
       res.writeHead(200, {'Content-Type': 'text/plain'});
-      res.write(data);
-      res.end()
+      // setTimeout(function () {
+        res.write(data);
+        res.end()
+      // }, 5000)
     })
   } else if (req.url == '/style.css') {
     fs.readFile('style.css', 'utf-8', function (err, data) {
       res.writeHead(200, {'Content-Type': 'text/css'});
-      res.write(data);
-      res.end()
+      // setTimeout(function () {
+        res.write(data);
+        res.end()
+      // }, 5000)
     })
   } else if (req.url == '/index.html') {
     fs.readFile('index.html', 'utf-8', function (err, data) {
@@ -31,5 +35,5 @@ http.createServer((req, res) => {
     })
   }
 }).listen(port, hostname, () => {
-  console.log('Server running at ' + hostname);
+  console.log('Server running at ' + hostname + '：' + port);
 });

@@ -1,1 +1,3 @@
-var a= 1;
+var b = document.createElement('div');
+b.innerText = 'bbbbbbb';
+document.body.appendChild(b);
