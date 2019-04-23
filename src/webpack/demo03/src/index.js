@@ -14,7 +14,7 @@ function component() {
   element.appendChild(btn);
   return element;
 }
-let element = component()
+let element = component();
 
 document.body.appendChild(element);
 

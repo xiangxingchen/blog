@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server --progress",
     "server": "node server.js"
   },
   "keywords": [],
