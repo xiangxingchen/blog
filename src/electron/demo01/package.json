@@ -1,0 +1,12 @@
+{
+  "name": "demo01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "Chen Xiang <1447388624@qq.com>",
+  "license": "MIT"
+}

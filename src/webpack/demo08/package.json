@@ -1,0 +1,12 @@
+{
+  "name": "demo08",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack --config webpack.config.js"
+  },
+  "keywords": [],
+  "author": "Chen Xiang <1447388624@qq.com>",
+  "license": "MIT"
+}
